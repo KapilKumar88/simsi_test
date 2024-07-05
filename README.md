@@ -1,6 +1,7 @@
 # simsi_test
 
 ## Project Setup
+- Random data is used so the marker on the map is not belong to one city only.
 - Clone the repository by using the command `git clone https://github.com/KapilKumar88/simsi_test.git`
 
 ### Backend
