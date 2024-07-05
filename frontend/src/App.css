@@ -33,6 +33,13 @@ select, input {
   font-size: 16px;
 }
 
+input {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
 .leaflet-container {
   height: 100%;
 }
@@ -40,6 +47,10 @@ select, input {
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
+  }
+
+  input {
+    width: 93%;
   }
 
   .left-section,

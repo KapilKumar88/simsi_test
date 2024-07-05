@@ -22,22 +22,18 @@ const Filter = () => {
 
     return (
         <>
-            <div>
-                <input type={"text"} onChange={handleSearchInput} placeholder="Search service by name" />
-            </div>
-            <div>
-                <select onChange={(e) => {
-                    setFilterType(e.target.value);
-                }} value={filterType}>
-                    <option value={''}>Select Service Type</option>
-                    {
-                        serviceTypes?.length > 0 &&
-                        serviceTypes.map((item, index) => (
-                            <option key={index} value={item}>{item?.toUpperCase()}</option>
-                        ))
-                    }
-                </select>
-            </div>
+            <input type={"text"} onChange={handleSearchInput} placeholder="Search service by name" />
+            <select onChange={(e) => {
+                setFilterType(e.target.value);
+            }} value={filterType}>
+                <option value={''}>Select Service Type</option>
+                {
+                    serviceTypes?.length > 0 &&
+                    serviceTypes.map((item, index) => (
+                        <option key={index} value={item}>{item?.toUpperCase()}</option>
+                    ))
+                }
+            </select>
         </>
     );
 }

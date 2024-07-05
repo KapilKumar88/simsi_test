@@ -7,15 +7,15 @@ exports.fetchCityServices = async (req, res, next) => {
 
         if (serviceType && search) {
             finalOutput = cityServices.filter(x => {
-                return x?.type?.toLowerCase() === serviceType && x.name?.toLowerCase?.includes(search);
+                return x?.type?.toLowerCase() === serviceType && x.name?.toLowerCase()?.includes(search);
             });
         } else if (serviceType) {
             finalOutput = cityServices.filter(x => {
-                return x?.type?.toLowerCase === serviceType;
+                return x?.type?.toLowerCase() === serviceType;
             });
         } else if (search) {
             finalOutput = cityServices.filter(x => {
-                return x.name?.toLowerCase?.includes(search);
+                return x.name?.toLowerCase()?.includes(search);
             });
         }
 
